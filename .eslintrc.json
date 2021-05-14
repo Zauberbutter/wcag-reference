@@ -1,40 +1,40 @@
 {
-    "root": true,
-    "parserOptions": {
-        "ecmaVersion": 2020
-    },
-    "plugins": [
-        "prettier",
-        "unicorn"
-    ],
-    "extends": [
-        "xo",
-        "prettier",
-        "plugin:unicorn/recommended"
-    ],
-    "rules": {
-        "prettier/prettier": [
-            "warn",
-            {
-                "useTabs": true,
-                "tabWidth": 4,
-                "singleQuote": true,
-                "trailingComma": "es5"
-            }
-        ],
-        "comma-dangle": ["error", "only-multiline"],
-        "capitalized-comments": [
-            "error",
-            "always",
-            {
-                "line": {
-                    "ignorePattern": ".*"
-                },
-                "block": {
-                    "ignoreInlineComments": true,
-                    "ignoreConsecutiveComments": true
-                }
-            }
-        ]
-    }
+	"root": true,
+	"parserOptions": {
+		"ecmaVersion": 2020
+	},
+	"plugins": [
+		"prettier",
+		"unicorn"
+	],
+	"extends": [
+		"xo",
+		"prettier",
+		"plugin:unicorn/recommended"
+	],
+	"rules": {
+		"prettier/prettier": [
+			"warn",
+			{
+				"useTabs": true,
+				"tabWidth": 4,
+				"singleQuote": true,
+				"trailingComma": "es5"
+			}
+		],
+		"comma-dangle": ["error", "only-multiline"],
+		"capitalized-comments": [
+			"error",
+			"always",
+			{
+				"line": {
+					"ignorePattern": ".*"
+				},
+				"block": {
+					"ignoreInlineComments": true,
+					"ignoreConsecutiveComments": true
+				}
+			}
+		]
+	}
 }
