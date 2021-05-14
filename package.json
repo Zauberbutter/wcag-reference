@@ -1,6 +1,6 @@
 {
 	"name": "wcag-reference",
-	"version": "0.9.0",
+	"version": "0.9.1",
 	"description": "Gets a reference to the WCAG documents for you!",
 	"exports": "./index.js",
 	"type": "module",
