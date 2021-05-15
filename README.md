@@ -1,4 +1,4 @@
-# wcag-reference
+# [wcag-reference](https://www.npmjs.com/package/wcag-reference)
 
 Gets a reference to any of the WCAG resources for you!
 
