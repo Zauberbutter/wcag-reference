@@ -8,10 +8,7 @@
 		"test": "npm run lint && tsd",
 		"lint": "eslint ."
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Cerberooo/wcag-reference.git"
-	},
+	"repository": "Zauberbutter/wcag-reference",
 	"keywords": [
 		"wcag",
 		"reference",
