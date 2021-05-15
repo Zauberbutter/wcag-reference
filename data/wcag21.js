@@ -43,15 +43,16 @@ export async function getWcag21Informations() {
 			)) {
 				const successCriterion = {};
 				successCriterion.id = successCriterionNode.id;
-				successCriterion.handle = getSuccessCriterionText(
-					successCriterionNode
-				);
-				successCriterion.quickReference = successCriterionNode.querySelector(
-					'a[href*="WCAG21/quickref"]'
-				).href;
-				successCriterion.detailedReference = successCriterionNode.querySelector(
-					'a[href*="WCAG21/Understanding"]'
-				).href;
+				successCriterion.handle =
+					getSuccessCriterionText(successCriterionNode);
+				successCriterion.quickReference =
+					successCriterionNode.querySelector(
+						'a[href*="WCAG21/quickref"]'
+					).href;
+				successCriterion.detailedReference =
+					successCriterionNode.querySelector(
+						'a[href*="WCAG21/Understanding"]'
+					).href;
 				successCriterion.level = successCriterionNode
 					.querySelector('.conformance-level')
 					.textContent.match(/Level (?<level>A{1,3})/)

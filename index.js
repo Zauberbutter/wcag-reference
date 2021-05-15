@@ -2,8 +2,8 @@ import informations from './data/data.js';
 
 const versionMappings = {
 	'2.0': 'wcag20',
-	'2.1': 'wcag21',
-	'2.2': 'wcag22',
+	2.1: 'wcag21',
+	2.2: 'wcag22',
 };
 
 /**

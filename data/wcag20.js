@@ -36,9 +36,8 @@ export async function getWcag20Informations() {
 			const guideline = {};
 			guideline.id = guidelineNode.querySelector('a').id;
 			guideline.text = getInnerText(guidelineNode.querySelector('h3'));
-			guideline.detailedReference = guidelineNode.querySelector(
-				'a[href*="w3.org"]'
-			).href;
+			guideline.detailedReference =
+				guidelineNode.querySelector('a[href*="w3.org"]').href;
 
 			// success criterion
 			guideline.successCriterions = {};
@@ -51,12 +50,14 @@ export async function getWcag20Informations() {
 				successCriterion.handle = getInnerText(
 					successCriterionNode.querySelector('.sc-handle')
 				).replace(':', '');
-				successCriterion.quickReference = successCriterionNode.querySelector(
-					'a[href*="quickref"]'
-				).href;
-				successCriterion.detailedReference = successCriterionNode.querySelector(
-					'a[href*="UNDERSTANDING-WCAG20"]'
-				).href;
+				successCriterion.quickReference =
+					successCriterionNode.querySelector(
+						'a[href*="quickref"]'
+					).href;
+				successCriterion.detailedReference =
+					successCriterionNode.querySelector(
+						'a[href*="UNDERSTANDING-WCAG20"]'
+					).href;
 				successCriterion.level = successCriterionNode
 					.querySelector('.sctxt')
 					.textContent.match(/Level (?<level>A{1,3})/)

@@ -48,9 +48,8 @@ export async function getWcag22Informations() {
 			)) {
 				const successCriterion = {};
 				successCriterion.id = successCriterionNode.id;
-				successCriterion.handle = getSuccessCriterionText(
-					successCriterionNode
-				);
+				successCriterion.handle =
+					getSuccessCriterionText(successCriterionNode);
 				successCriterion.quickReference =
 					'https://www.w3.org/WAI/WCAG22/quickref/#' +
 					successCriterionNode.id;
